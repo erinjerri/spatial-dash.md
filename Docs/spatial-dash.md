@@ -67,3 +67,29 @@ The same `SpatialEnvironment` can express itself differently per tab:
 
 For TimeBite, the dashboard should feel like a command view in Operator, a calm overview in Light, and a reflective studio in Dark.
 
+## Generative Spatial Dashboard Layer
+
+The spatial dashboard is not a freeform AI-generated interface. It is a structured visualization system.
+
+The data model remains canonical:
+- DailyPlan
+- FocusLane
+- CycleLog
+- Reflection
+
+GenAI may transform:
+- layout emphasis
+- annotations
+- summaries
+- view presets
+- prioritization
+
+GenAI may NOT transform:
+- raw task data
+- logged time
+- completion status
+- reflection records
+
+The AI layer outputs a constrained `SpatialDashboardLayout` object that maps existing data into visual grammar.
+
+This preserves trust, auditability, and repeatable visualization while allowing the dashboard to feel adaptive.
